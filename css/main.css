@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #0b0611;
+    font-variant: small-caps;
+    scroll-behavior: smooth;
+    font-family: 'Crimson Text', serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.footer p:first-child {
+    margin-top: 0%;
+}
+
+:-webkit-any-link {
+    font-variant: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+:-moz-any-link {
+    font-variant: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+:any-link {
+    font-variant: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#main-image {
+    background-image: url("../images/background.jpg");
+    background-position: bottom center;
+    min-height: 60%;
+    max-height: 1000px;
+    width: 100%;
+}
+
+#main-title {
+    position: relative;
+    margin-left: 16%;
+    top: 25%;
+    padding-top: 15%;
+    padding-bottom: 8%;
+}
+
+#main-title img {
+    height: auto;
+    width: 80%;
+}
+
+#main-title p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2vw;
+    margin-right: 20%;
+    margin-bottom: 0.5%;
+}
+
+.fa-angle-down {
+    color: #FFFFFF;
+    font-size: 2vw;
+    margin-left: 39%;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-18px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#content {
+    padding-top: 2em;
+    background-image: linear-gradient(#0b0512 60%, #0a0f28);
+}
+
+#bells {
+    position: relative;
+    margin-top: -5%;
+}
+
+#bells img {
+    width: 100%;
+}
+
+#phrase {
+    padding: 3%;
+    padding-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+#phrase p:first-child {
+    margin-top: 0;
+}
+
+#phrase p:last-child {
+    margin-bottom: 0;
+}
+
+#dices {
+    padding-left: 24%;
+    padding-right: 24%;
+    margin-top: -11.5%;
+}
+
+#dices img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+#download {
+    margin: 3%;
+    align-content: center;
+}
+
+#download .title {
+    text-align: center;
+    font-size: 4vw;
+    color: #ffc066;
+}
+
+.image {
+    max-height: 400px;
+    height: auto;
+    width: 100;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    position: absolute;
+    left: 49%;
+    top: 90%;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -90%);
+    -ms-transform: translate(-50%, -90%);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: xx-large;
+    font-variant: none;
+}
+
+.container-image {
+    position: relative;
+}
+
+.container-image:hover .image {
+    opacity: 0.4;
+}
+
+.container-image:hover .middle {
+    opacity: 1;
+}
+
+.items {
+    display: inline-block;
+    width: 33%;
+}
+
+.subtitle {
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+.description {
+    margin-top: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1vw;
+    padding: 0% 6% 0% 6%;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    padding: 40%;
+    font-size: 1.2vw;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 1280px) {
+    #main-image {
+        background-position: 50% 60%;
+    }
+    .image {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+    .items {
+        display: block;
+        width: 100%;
+    }
+    #bells {
+        margin-top: -7%;
+    }
+    .subtitle {
+        font-size: 3vw;
+    }
+    .description {
+        font-size: 2vw;
+        padding: 0% 20% 0% 20%;
+    }
+    #phrase {
+        font-size: 3vw;
+    }
+    #download .title {
+        font-size: 8vw;
+    }
+    .button {
+        font-size: 2.6vw;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    #main-image {
+        background-position: 50% 20%;
+    }
+    #bells {
+        margin-top: -10%;
+    }
+    .subtitle {
+        font-size: 3.5vw;
+    }
+    .description {
+        font-size: 2.5vw;
+        padding: 0% 20% 0% 20%;
+    }
+    #phrase {
+        font-size: 4vw;
+    }
+    #download .title {
+        font-size: 10vw;
+    }
+    .button {
+        font-size: 7vw;
+    }
+}
+
+
+}
